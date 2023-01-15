@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encrypter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/encriptado.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <img class="logo" src="./images/Logo.svg" alt="Logo Alura Latam">
+    </header>
+
+    <main>
+            <section class="input">
+                <textarea cols="16" rows="8" id="mensaje" placeholder="Ingrese el texto aqui"></textarea>
+
+
+                    <div class="alert">
+                        <img class="imageAlert" src="./images/alert.png" alt="alert">
+                        <p class="pAlert"> Solo letras minúsculas y sin acentos </p>
+                    </div>
+
+                    <div class="boxButtons">
+                        <input id="encrypt" class="button1" type="submit" value="Encrypt" required>
+                        <input id="decrypt" class="button2" type="submit" value="Decrypt">
+                    </div>
+            </section>
+                
+            <div class="rectangle">
+                
+                <div class="resultado">
+                    <textarea type="text" id="resultado" class="inputResultado"></textarea>
+                    <div class="withoutMessage">
+                        <img class="muñeco" src="./images/Muñeco.png" alt="Muñeco">
+                    </div>
+                    <input type="submit" value="Copy" class="copy" id="copy">
+                </div>
+                
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
